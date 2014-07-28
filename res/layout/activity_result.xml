@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0286da"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Result" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="نتیجه"
+        
+        
+          android:textAppearance="?android:attr/textAppearanceLarge" 
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="26dp"
+        android:text="تعداد سوالات :"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/all_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toLeftOf="@+id/textView2"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+           android:textColor="#ffe400" 
+        />
+
+
+
+    <TextView
+        android:id="@+id/TextView05"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="28dp"
+        android:layout_toRightOf="@+id/false_answer"
+        android:text="تعداد جواب درست :"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    
+        <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/TextView05"
+        android:layout_below="@+id/correct_answer"
+        android:layout_marginTop="25dp"
+        android:text="تعداد جواب غلط    :"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/correct_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/TextView05"
+            android:layout_toLeftOf="@+id/TextView05"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#00bd00" 
+            
+            />
+
+        <TextView
+            android:id="@+id/false_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/TextView03"
+            android:layout_toLeftOf="@+id/all_question"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ff0000" />
+    
+</RelativeLayout>
